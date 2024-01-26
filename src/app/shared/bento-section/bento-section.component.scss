@@ -1,0 +1,28 @@
+.container-a {
+  height: 100%;
+  background-color: aqua;
+
+}
+.container-b {
+  height: 100%;
+  background-color: rgb(17, 0, 255);
+}
+
+.row {
+  --bs-gutter-x: 40px;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  flex:1
+}
+.col-lg-4 {
+  flex: 0 0 auto;
+    width: 33.33333333%;
+}
+
+.main-c {
+  margin: 2rem 10rem;
+}
