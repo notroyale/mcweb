@@ -27,12 +27,21 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/js/vendors"
+
             ],
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/vendors/counterup.js",
+              "src/assets/js/vendors/swiper-bundle.min.js",
+              "src/assets/js/vendors/fslightbox.js",
+              "src/assets/js/vendors/jos.min.js",
+              "src/assets/js/main.js"
+
+            ]
           },
           "configurations": {
             "production": {
@@ -92,7 +101,12 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/vendors/swiper-bundle.min.js"
+
+
+          ]
+
           }
         }
       }
