@@ -1,4 +1,4 @@
-// export default class countUp {
+// export class countUp {
 //     constructor(el) {
 //         this.el = el;
 //         this.setVars();
@@ -80,7 +80,7 @@
 // const dataModules = [...document.querySelectorAll('[data-module="countup"]')];
 
 // dataModules.forEach((element) => {
-//     element.dataset.module.split(" ").forEach(function () {
+//     element.dataset.module.split(" ").forEach(function() {
 //         new countUp(element);
 //     });
 // });

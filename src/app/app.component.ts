@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { InfoGridComponent } from "./shared/info-grid/info-grid.component";
@@ -6,6 +6,7 @@ import { CardsGridComponent } from "./shared/cards-grid/cards-grid.component";
 import { TokenomicsSectionComponent } from "./shared/tokenomics-section/tokenomics-section.component";
 import { RoadmapSectionComponent } from "./shared/roadmap-section/roadmap-section.component";
 import { IntroCardsComponent } from "./shared/intro-cards/intro-cards.component";
+import { HttpClient } from '@angular/common/http';
 const menu = document.querySelector(".menu-block");
 
 @Component({
@@ -15,13 +16,31 @@ const menu = document.querySelector(".menu-block");
     styleUrl: './app.component.scss',
     imports: [CommonModule, RouterOutlet, InfoGridComponent, CardsGridComponent, TokenomicsSectionComponent, RoadmapSectionComponent, IntroCardsComponent]
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+
+  constructor() {}
+  ngOnInit(): void {
+    this.loadScript('./assets/js/vendors/menu.js');
+    this.loadScript('./assets/js/vendors/jos.min.js');
+    this.loadScript('./assets/js/vendors/swiper-bundle.min.js');
+    this.loadScript('./assets/js/vendors/lenis.min.js');
+    this.loadScript('./assets/js/vendors/counterup.js');
+    this.loadScript('./assets/js/vendors/fslightbox.js');
+
+  }
+
   title = 'mcweb';
 
-  toggleMenu() {
-    menu?.classList.toggle("active");
-    document.querySelector(".menu-overlay")?.classList.toggle("active");
-  }
+ loadScript(url: string) {
+    return new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.src = url;
+        script.onload = resolve;
+        script.onerror = reject;
+        document.head.append(script);
+    });
+}
+
 
 }
 
