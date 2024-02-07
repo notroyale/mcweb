@@ -1,29 +1,47 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { Application } from '@splinetool/runtime';
-import { HeaderComponent } from "./shared/header/header.component";
-import { AnnouncmentBannerComponent } from "./shared/announcment-banner/announcment-banner.component";
-import { IntroSectionComponent } from "./shared/intro-section/intro-section.component";
-import { NewsletterComponent } from "./shared/newsletter/newsletter.component";
-import { BentoSectionComponent } from "./shared/bento-section/bento-section.component";
-import { HeroSectionComponent } from "./shared/hero-section/hero-section.component";
+import { InfoGridComponent } from "./shared/info-grid/info-grid.component";
+import { CardsGridComponent } from "./shared/cards-grid/cards-grid.component";
+import { TokenomicsSectionComponent } from "./shared/tokenomics-section/tokenomics-section.component";
+import { RoadmapSectionComponent } from "./shared/roadmap-section/roadmap-section.component";
+import { IntroCardsComponent } from "./shared/intro-cards/intro-cards.component";
+import { HttpClient } from '@angular/common/http';
+const menu = document.querySelector(".menu-block");
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
-    imports: [RouterOutlet, HeaderComponent, AnnouncmentBannerComponent, IntroSectionComponent, NewsletterComponent, BentoSectionComponent, HeroSectionComponent]
+    imports: [CommonModule, RouterOutlet, InfoGridComponent, CardsGridComponent, TokenomicsSectionComponent, RoadmapSectionComponent, IntroCardsComponent]
 })
 export class AppComponent implements OnInit {
-  title = 'sol';
 
+  constructor() {}
+  ngOnInit(): void {
+    this.loadScript('./assets/js/vendors/menu.js');
+    this.loadScript('./assets/js/vendors/jos.min.js');
+    this.loadScript('./assets/js/vendors/swiper-bundle.min.js');
+    this.loadScript('./assets/js/vendors/lenis.min.js');
+    this.loadScript('./assets/js/vendors/counterup.js');
+    this.loadScript('./assets/js/vendors/fslightbox.js');
 
-  public ngOnInit() {
-    const canvas: any = document.getElementById('canvas3d');
-    const app = new Application(canvas);
-    app.load('https://prod.spline.design/r4j7KrscsfNBh2Og/scene.splinecode');
   }
+
+  title = 'mcweb';
+
+ loadScript(url: string) {
+    return new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.src = url;
+        script.onload = resolve;
+        script.onerror = reject;
+        document.head.append(script);
+    });
+}
 
 
 }
+
+
