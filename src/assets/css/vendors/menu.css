@@ -54,7 +54,13 @@
     width: 100%;
     z-index: 999;
 }
-
+.site-header--fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
 .site-header--sticky:not(.mobile-sticky-enable) {
     position: absolute !important;
     top: 0;

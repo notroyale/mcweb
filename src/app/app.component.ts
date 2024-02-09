@@ -6,7 +6,7 @@ import { CardsGridComponent } from "./shared/cards-grid/cards-grid.component";
 import { TokenomicsSectionComponent } from "./shared/tokenomics-section/tokenomics-section.component";
 import { RoadmapSectionComponent } from "./shared/roadmap-section/roadmap-section.component";
 import { IntroCardsComponent } from "./shared/intro-cards/intro-cards.component";
-import { HttpClient } from '@angular/common/http';
+import { animate, keyframes, state, style, transition, trigger } from '@angular/animations';
 const menu = document.querySelector(".menu-block");
 
 @Component({
@@ -14,9 +14,12 @@ const menu = document.querySelector(".menu-block");
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
-    imports: [CommonModule, RouterOutlet, InfoGridComponent, CardsGridComponent, TokenomicsSectionComponent, RoadmapSectionComponent, IntroCardsComponent]
+    imports: [CommonModule, RouterOutlet, InfoGridComponent, CardsGridComponent,
+      TokenomicsSectionComponent, RoadmapSectionComponent, IntroCardsComponent],
+
 })
 export class AppComponent implements OnInit {
+  currentState = 'start'; // Initial state
 
   constructor() {}
   ngOnInit(): void {
@@ -40,7 +43,15 @@ export class AppComponent implements OnInit {
         document.head.append(script);
     });
 }
-
+ toggleTheme() {
+  if (document.body.classList.contains("dark"))
+      document.body.classList.remove("dark");
+  else
+      document.body.classList.add("dark");
+}
+toggleAnimation() {
+  this.currentState = this.currentState === 'start' ? 'end' : 'start';
+}
 
 }
 
