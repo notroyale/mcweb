@@ -7,6 +7,7 @@ import { TokenomicsSectionComponent } from "./shared/tokenomics-section/tokenomi
 import { RoadmapSectionComponent } from "./shared/roadmap-section/roadmap-section.component";
 import { IntroCardsComponent } from "./shared/intro-cards/intro-cards.component";
 import { animate, keyframes, state, style, transition, trigger } from '@angular/animations';
+import { NewsletterSectionComponent } from "./shared/newsletter-section/newsletter-section.component";
 const menu = document.querySelector(".menu-block");
 
 @Component({
@@ -15,8 +16,7 @@ const menu = document.querySelector(".menu-block");
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
     imports: [CommonModule, RouterOutlet, InfoGridComponent, CardsGridComponent,
-      TokenomicsSectionComponent, RoadmapSectionComponent, IntroCardsComponent],
-
+        TokenomicsSectionComponent, RoadmapSectionComponent, IntroCardsComponent, NewsletterSectionComponent]
 })
 export class AppComponent implements OnInit {
   currentState = 'start'; // Initial state
