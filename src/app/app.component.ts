@@ -8,6 +8,8 @@ import { RoadmapSectionComponent } from "./shared/roadmap-section/roadmap-sectio
 import { IntroCardsComponent } from "./shared/intro-cards/intro-cards.component";
 import { animate, keyframes, state, style, transition, trigger } from '@angular/animations';
 import { NewsletterSectionComponent } from "./shared/newsletter-section/newsletter-section.component";
+import { HeroSectionComponent } from "./shared/hero-section/hero-section.component";
+
 const menu = document.querySelector(".menu-block");
 
 @Component({
@@ -16,17 +18,20 @@ const menu = document.querySelector(".menu-block");
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
     imports: [CommonModule, RouterOutlet, InfoGridComponent, CardsGridComponent,
-        TokenomicsSectionComponent, RoadmapSectionComponent, IntroCardsComponent, NewsletterSectionComponent]
+        TokenomicsSectionComponent, RoadmapSectionComponent, IntroCardsComponent, NewsletterSectionComponent, HeroSectionComponent]
 })
 export class AppComponent implements OnInit {
+
+
+  
   currentState = 'start'; // Initial state
 
   constructor() {}
   ngOnInit(): void {
     this.loadScript('./assets/js/vendors/menu.js');
-    this.loadScript('./assets/js/vendors/jos.min.js');
-    this.loadScript('./assets/js/vendors/swiper-bundle.min.js');
-    this.loadScript('./assets/js/vendors/lenis.min.js');
+    // this.loadScript('./assets/js/vendors/jos.min.js');
+    // this.loadScript('./assets/js/vendors/swiper-bundle.min.js');
+    // this.loadScript('./assets/js/vendors/lenis.min.js');
     this.loadScript('./assets/js/vendors/counterup.js');
     this.loadScript('./assets/js/vendors/fslightbox.js');
 
@@ -43,15 +48,7 @@ export class AppComponent implements OnInit {
         document.head.append(script);
     });
 }
- toggleTheme() {
-  if (document.body.classList.contains("dark"))
-      document.body.classList.remove("dark");
-  else
-      document.body.classList.add("dark");
-}
-toggleAnimation() {
-  this.currentState = this.currentState === 'start' ? 'end' : 'start';
-}
+
 
 }
 
