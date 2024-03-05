@@ -9,6 +9,7 @@ import { IntroCardsComponent } from "./shared/intro-cards/intro-cards.component"
 import { animate, keyframes, state, style, transition, trigger } from '@angular/animations';
 import { NewsletterSectionComponent } from "./shared/newsletter-section/newsletter-section.component";
 import { HeroSectionComponent } from "./shared/hero-section/hero-section.component";
+import { RotatingHeadlineComponent } from "./shared/rotating-headline/rotating-headline.component";
 
 const menu = document.querySelector(".menu-block");
 
@@ -18,7 +19,7 @@ const menu = document.querySelector(".menu-block");
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
     imports: [CommonModule, RouterOutlet, InfoGridComponent, CardsGridComponent,
-        TokenomicsSectionComponent, RoadmapSectionComponent, IntroCardsComponent, NewsletterSectionComponent, HeroSectionComponent]
+        TokenomicsSectionComponent, RoadmapSectionComponent, IntroCardsComponent, NewsletterSectionComponent, HeroSectionComponent, RotatingHeadlineComponent]
 })
 export class AppComponent implements OnInit {
 
