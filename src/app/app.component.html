@@ -72,7 +72,7 @@
 
         <main class="main-wrapper relative overflow-hidden">
             <!--...::: Hero Section Start :::... -->
-            <app-hero-section></app-hero-section>
+            <app-hero-alternative></app-hero-alternative>
             <section id="newsletter">
                 <app-newsletter-section></app-newsletter-section>
             </section>
@@ -84,8 +84,8 @@
                     <div class="global-container">
                         <div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:gap-28 xxl:gap-32">
                             <!-- Content Left Block -->
-                            <div class="jos order-2 overflow-hidden rounded-md md:order-1" data-jos_animation="fade-left">
-                                <img src="assets/img/mock1.png" alt="content-image-1" width="526" height="450" class="h-auto w-full" />
+                            <div class="jos order-2 overflow-hidden rounded-md md:order-1 mock1" data-jos_animation="fade-left">
+                                <img src="assets/img/mock3.png" alt="content-image-1" width="526" height="450" class="h-auto w-full" />
                             </div>
                             <!-- Content Left Block -->
                             <!-- Content Right Block -->
@@ -117,7 +117,7 @@
                         <div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:grid-cols-[minmax(0,_1.2fr)_1fr] xl:gap-28 xxl:gap-32">
                             <!-- Content Left Block -->
                             <div class="jos order-2 overflow-hidden rounded-md" data-jos_animation="fade-left">
-                                <img src="assets/img/mock12.png" alt="content-image-2" class="h-auto w-full mock2" />
+                                <img src="assets/img/mock2.png" alt="content-image-2" class="h-auto w-full mock2" />
                             </div>
                             <!-- Content Left Block -->
                             <!-- Content Right Block -->
@@ -159,10 +159,12 @@
                 </div>
                 <!-- Section Spacer -->
             </section>
-            <app-rotating-headline></app-rotating-headline>
+            <app-core-features-section></app-core-features-section>
 
-            <app-cards-grid></app-cards-grid>
+            <!-- <app-rotating-headline></app-rotating-headline> -->
+            <!-- <app-cards-grid></app-cards-grid> -->
 
+            <app-tokenomics-card></app-tokenomics-card>
             <!-- <app-tokenomics-section></app-tokenomics-section> -->
 
             <app-info-grid></app-info-grid>
