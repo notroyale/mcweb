@@ -2093,7 +2093,7 @@ h5 {
     --tw-gradient-to: #37ff1467 var(--tw-gradient-to-position);
 }
 .to-\[\#5028DD\] {
-    --tw-gradient-to: #5028DD var(--tw-gradient-to-position);
+    /* --tw-gradient-to: #5028DD var(--tw-gradient-to-position); */
 }
 .to-\[rgba\(0\2c 0\2c 0\2c 0\.5\)\] {
     --tw-gradient-to: rgba(0, 0, 0, 0.5) var(--tw-gradient-to-position);

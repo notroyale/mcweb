@@ -6,7 +6,7 @@
     font-weight: 500;
     line-height: 34px;
     letter-spacing: -0.14rem;
-    color: #fff;
+    color: #000000;
 }
 
 .css-vsfk06 {
@@ -49,12 +49,19 @@
     border-bottom-width: 1px;
     padding-bottom: 0.75rem;
     font-size: 18px;
+    background-color: white;
+    color: black;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 1rem;
 }
 
 @media (min-width: 1024px) {
     .css-ftqwsx {
         -webkit-box-pack: end;
         justify-content: flex-end;
+        border: 1px solid #a1a1a1;
+        border-left: none;
     }
     .css-1cdx16d {
         font-size: 68px;
@@ -63,7 +70,7 @@
 }
 
 .css-1dm132h {
-    color: #fff;
+    color:#161617;
 }
 
 .css-6svpdk {
@@ -107,6 +114,12 @@
     border-bottom-width: 1px;
     padding-bottom: 0.75rem;
     font-size: 18px;
+    background-color: #fff;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    padding: 1rem;
+    border: 1px solid #a1a1a1;
+    border-right: none;
 }
 
 .css-140tk87 {
@@ -136,6 +149,7 @@
     font-size: 40px;
     line-height: 44px;
     letter-spacing: -1px;
+    color:#000000;
 }
 
 .recharts-wrapper {
@@ -146,7 +160,7 @@
 }
 
 .main-bc {
-    background-color: #161617;
+    background-color: #fff;
     padding-bottom: 4rem;
     padding-top: 2rem;
 }
@@ -160,7 +174,7 @@
     text-align: center;
     font-size: 14px;
     line-height: 20px;
-    color: #fff;
+    color: #000000;
     margin-bottom: 5rem;
 }
 

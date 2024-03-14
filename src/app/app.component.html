@@ -9,7 +9,7 @@
                 <div class="flex items-center justify-between gap-x-8">
                     <!-- Header Logo -->
                     <a href="index.html" class="">
-                        <img src="assets/img/sol_main_logo_w2.png" alt="AIMass" width="120" height="40">
+                        <img src="assets/img/sol_main_logo_w3.png" alt="AIMass" class="main-logo">
 
                     </a>
                     <!-- Header Logo -->
@@ -52,9 +52,9 @@
 
                     <!-- Header User Event -->
                     <div class="flex items-center gap-6">
-                        <a href="login.html" class="button hidden rounded-[50px] border-[#fff] bg-[#161617] text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white lg:inline-block">Login</a>
+                        <!-- <a href="login.html" class="button hidden rounded-[50px] border-[#fff] bg-[#161617] text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white lg:inline-block">Login</a>
                         <a href="signup.html" class="button hidden rounded-[50px] custom-bg text-white  after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white lg:inline-block">Sign
-                            up free</a>
+                            up free</a> -->
                         <!-- Responsive Offcanvas Menu Button -->
                         <div class="block lg:hidden">
                             <button id="openBtn" class="hamburger-menu mobile-menu-trigger">
@@ -72,7 +72,7 @@
 
         <main class="main-wrapper relative overflow-hidden">
             <!--...::: Hero Section Start :::... -->
-            <app-hero-section></app-hero-section>
+            <app-hero-alternative></app-hero-alternative>
             <section id="newsletter">
                 <app-newsletter-section></app-newsletter-section>
             </section>
@@ -84,8 +84,8 @@
                     <div class="global-container">
                         <div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:gap-28 xxl:gap-32">
                             <!-- Content Left Block -->
-                            <div class="jos order-2 overflow-hidden rounded-md md:order-1" data-jos_animation="fade-left">
-                                <img src="assets/img/mock1.png" alt="content-image-1" width="526" height="450" class="h-auto w-full" />
+                            <div class="jos order-2 overflow-hidden rounded-md md:order-1 mock1" data-jos_animation="fade-left">
+                                <img src="assets/img/mock3.png" alt="content-image-1" width="526" height="450" class="h-auto w-full" />
                             </div>
                             <!-- Content Left Block -->
                             <!-- Content Right Block -->
@@ -109,7 +109,6 @@
                 </div>
                 <!-- Section Spacer -->
             </section>
-
             <section id="content-section-2">
                 <!-- Section Spacer -->
                 <div class="pb-20 xl:pb-[150px]">
@@ -118,7 +117,7 @@
                         <div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:grid-cols-[minmax(0,_1.2fr)_1fr] xl:gap-28 xxl:gap-32">
                             <!-- Content Left Block -->
                             <div class="jos order-2 overflow-hidden rounded-md" data-jos_animation="fade-left">
-                                <img src="assets/img/mock6.png" alt="content-image-2" width="526" height="450" class="h-auto w-full" />
+                                <img src="assets/img/mock2.png" alt="content-image-2" class="h-auto w-full mock2" />
                             </div>
                             <!-- Content Left Block -->
                             <!-- Content Right Block -->
@@ -160,11 +159,15 @@
                 </div>
                 <!-- Section Spacer -->
             </section>
+            <app-core-features-section></app-core-features-section>
 
-            <app-cards-grid></app-cards-grid>
-            <app-tokenomics-section></app-tokenomics-section>
+            <!-- <app-rotating-headline></app-rotating-headline> -->
+            <!-- <app-cards-grid></app-cards-grid> -->
+<!-- <app-tokenomics-carousel></app-tokenomics-carousel> -->
+            <app-tokenomics-card></app-tokenomics-card>
+            <!-- <app-tokenomics-section></app-tokenomics-section> -->
 
-            <app-info-grid></app-info-grid>
+            <!-- <app-info-grid></app-info-grid> -->
 
             <!--...::: Content Section End :::... -->
             <!-- <app-intro-cards></app-intro-cards> -->

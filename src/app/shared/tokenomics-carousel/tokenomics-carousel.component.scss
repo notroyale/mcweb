@@ -1,0 +1,31 @@
+CSS
+.carousel {
+  display: grid;
+  grid-template-columns: 1fr;  /* One item per row */
+  width: fit-content;  /* Adjust width as needed */
+  overflow: hidden;  /* Hide overflowing content */
+  animation: slide 3s infinite alternate ease-in-out;
+}
+
+.carousel-item {
+  display: grid;
+  grid-template-rows: 1fr auto;  /* Image, then content */
+  align-items: center;
+  text-align: center;
+  opacity: 0;  /* Initially hide all items */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;  /* Resize image to fit */
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }  /* Move each item 100% to the left */
+}
+
+.carousel-item:first-child {
+  opacity: 1;  /* Show the first item by default */
+}
