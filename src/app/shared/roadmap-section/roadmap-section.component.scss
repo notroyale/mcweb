@@ -2637,7 +2637,7 @@ h6,
 
 .wide-sm,
 .wide-auto-sm {
-    max-width: 555px;
+    max-width: 800px;
 }
 
 .wide-xs,
@@ -11008,7 +11008,7 @@ hr+.nk-block {
 }
 
 .tc-light .section-head p {
-    color: #8ca2e5;
+    color: #f35637;
 }
 
 .section-head.tc-light p {
@@ -13428,13 +13428,13 @@ hr+.nk-block {
 }
 
 .roadmap-title {
-    color: #8ca2e5;
+    color: #f35637;
     font-weight: 700;
     font-size: 16px;
 }
 
 .tc-light .roadmap-title {
-    color: #fff;
+    color: #f35637;
 }
 
 .roadmap-title-s1 {
@@ -15980,6 +15980,26 @@ hr+.nk-block {
 }
 
 @media (max-width: 991px) {
+    .roadmap-title-s1 {
+        padding-top: 25px;
+        display: inline-block;
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 1.6;
+        color: #f56345;
+        font-weight: bold;
+    }
+    .align-roadmap {
+        width: 100%; 
+        margin: auto !important;
+    }
+    .roadmap-sub {
+        font-size: 1rem !important;
+        color: #dbe4f7;
+    }
+    .roadmap-wrap {
+        max-width: 100%;
+    }
     .contact-list-s2 {
         display: flex;
         justify-content: center;
