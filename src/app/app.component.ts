@@ -13,6 +13,7 @@ import { RotatingHeadlineComponent } from "./shared/rotating-headline/rotating-h
 import { TokenomicsCardComponent } from "./shared/tokenomics-card/tokenomics-card.component";
 import { HeroAlternativeComponent } from "./shared/hero-alternative/hero-alternative.component";
 import { CoreFeaturesSectionComponent } from "./shared/core-features-section/core-features-section.component";
+import { TokenomicsCarouselComponent } from "./shared/tokenomics-carousel/tokenomics-carousel.component";
 
 const menu = document.querySelector(".menu-block");
 
@@ -22,7 +23,7 @@ const menu = document.querySelector(".menu-block");
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
     imports: [CommonModule, RouterOutlet, InfoGridComponent, CardsGridComponent,
-        TokenomicsSectionComponent, RoadmapSectionComponent, IntroCardsComponent, NewsletterSectionComponent, HeroSectionComponent, RotatingHeadlineComponent, TokenomicsCardComponent, HeroAlternativeComponent, CoreFeaturesSectionComponent]
+        TokenomicsSectionComponent, RoadmapSectionComponent, IntroCardsComponent, NewsletterSectionComponent, HeroSectionComponent, RotatingHeadlineComponent, TokenomicsCardComponent, HeroAlternativeComponent, CoreFeaturesSectionComponent, TokenomicsCarouselComponent]
 })
 export class AppComponent implements OnInit {
 

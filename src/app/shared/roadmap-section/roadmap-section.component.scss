@@ -1477,7 +1477,14 @@ h6,
 }
 
 .bg-theme {
-    background-image: url("../../../assets/img/roadmap-bg.png");
+    // background-image: url("../../../assets/img/roadmap-bg.png");
+    background-color: #000;
+    max-width: 1332px;
+    margin: auto;
+}
+.align-roadmap {
+    width: 90%;
+    margin: auto !important;
 }
 
 .bg-theme.current {
@@ -12540,13 +12547,13 @@ hr+.nk-block {
     height: 50%;
     border-left-width: 14px;
     border-left-style: solid;
-    border-color: #14F195;
+    border-color: #dbe4f7;
     border-radius: 2rem;
 }
 
 .tc-light .roadmap-s1:before,
 .tc-light .roadmap-s1:after {
-    border-color: #14F195;
+    border-color: #dbe4f7;
 }
 
 .roadmap-s1:before {
@@ -13286,13 +13293,13 @@ hr+.nk-block {
     bottom: 6px;
     width: 11px;
     height: 11px;
-    margin-left: 0.5px;
+    margin-left: -0.5px;
     margin-top: -5.5px;
-    background: #16a3fe;
+    background: #fe330a;
 }
 
 .tc-light .roadmap-time-s1:after {
-    background: #fff;
+    background: #fe330a;
 }
 
 .roadmap-time-s1:before {
@@ -13305,12 +13312,12 @@ hr+.nk-block {
 
 .roadmap-done .roadmap-time-s1:before,
 .roadmap-current .roadmap-time-s1:before {
-    background: rgba(22, 163, 254, 0.23);
+    // background: #f7310991;
 }
 
 .tc-light .roadmap-done .roadmap-time-s1:before,
 .tc-light .roadmap-current .roadmap-time-s1:before {
-    background: rgba(255, 255, 255, 0.1);
+    // background: #f7310991;
 }
 
 .roadmap-time-s3 {
@@ -13437,6 +13444,7 @@ hr+.nk-block {
     font-weight: 500;
     line-height: 1.6;
     color: #415076;
+    font-weight: bold;
 }
 
 .roadmap-title-s2 {
@@ -13842,7 +13850,7 @@ hr+.nk-block {
         border-radius: 2rem
     }
     .tc-light .roadmap-wrap-s1:after {
-        border-color: #14F195
+        border-color: #dbe4f7
     }
     .roadmap-wrap-s1-alt:after {
         height: calc(100% + 14px);
@@ -13974,6 +13982,8 @@ hr+.nk-block {
     .roadmap-time-s1:after {
         left: 50%;
         bottom: 1px;
+        margin-left: -4.5px;
+
     }
     .roadmap-time-s1:before {
         bottom: -2px;
@@ -13991,6 +14001,8 @@ hr+.nk-block {
     }
     .roadmap-title-s1 {
         padding-top: 48px;
+        font-weight: bold;
+
     }
     .roadmap-title-s2 {
         font-size: 1rem;
@@ -33512,4 +33524,8 @@ html[xmlns] .flexslider .slides {
     .promo-trigger {
         display: none;
     }
+}
+
+.roadmap-sub {
+    font-size: 0.75rem;
 }

@@ -22,13 +22,12 @@ export class RotatingHeadlineComponent implements OnInit {
         show.removeAttribute('data-show');
         show.setAttribute('data-up', '');
         if (next != null && next != undefined && next.innerHTML != "") {
-          console.log(next.innerHTML);
           next.setAttribute('data-show', '');
         }
         else {
           var firstChild = document.querySelector('.mask')?.firstElementChild;
           if(firstChild != null && firstChild != undefined ) {
-            console.log('firstChild', firstChild);
+            // console.log('firstChild', firstChild);
                       next = firstChild;
                       next.setAttribute('data-show', '');
 
