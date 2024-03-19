@@ -33,12 +33,13 @@ export class AppComponent implements OnInit {
 
   constructor() {}
   ngOnInit(): void {
-    this.loadScript('./assets/js/vendors/menu.js');
-    // this.loadScript('./assets/js/vendors/jos.min.js');
-    // this.loadScript('./assets/js/vendors/swiper-bundle.min.js');
-    // this.loadScript('./assets/js/vendors/lenis.min.js');
+
+
     this.loadScript('./assets/js/vendors/counterup.js');
+    this.loadScript('./assets/js/vendors/swiper-bundle.min.js');
     this.loadScript('./assets/js/vendors/fslightbox.js');
+    // this.loadScript('./assets/js/vendors/jos.min.js');
+    this.loadScript('./assets/js/vendors/menu.js');
 
   }
 
@@ -54,6 +55,11 @@ export class AppComponent implements OnInit {
     });
 }
 
+activeIndex: number | null = null;
+
+toggleActive(index: number) {
+  this.activeIndex = this.activeIndex === index ? null : index;
+}
 
 }
 

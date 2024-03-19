@@ -206,7 +206,7 @@
                                 <!-- Accordion-->
                                 <ul class="accordion">
                                     <!-- Accordion items -->
-                                    <li class="accordion-item border-b-[1px] border-[#DBD6CF] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0 active">
+                                    <li class="accordion-item border-b-[1px] border-[#DBD6CF] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0" [ngClass]="{'active': activeIndex === 1}" (click)="toggleActive(1)">
                                         <div class="accordion-header flex items-center justify-between font-dmSans text-xl font-bold leading-[1.2] -tracking-[0.5px] text-black lg:text-[28px]">
                                             <p>How do I start AI SaaS?</p>
                                             <div class="accordion-icon">
@@ -221,7 +221,7 @@
                                     </li>
                                     <!-- Accordion items -->
                                     <!-- Accordion items -->
-                                    <li class="accordion-item border-b-[1px] border-[#DBD6CF] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0">
+                                    <li class="accordion-item border-b-[1px] border-[#DBD6CF] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0" [ngClass]="{'active': activeIndex === 2}" (click)="toggleActive(2)">
                                         <div class="accordion-header flex items-center justify-between font-dmSans text-xl font-bold leading-[1.2] -tracking-[0.5px] text-black lg:text-[28px]">
                                             <p>Can I customize AI SaaS solutions?</p>
                                             <div class="accordion-icon">
@@ -236,7 +236,7 @@
                                     </li>
                                     <!-- Accordion items -->
                                     <!-- Accordion items -->
-                                    <li class="accordion-item border-b-[1px] border-[#DBD6CF] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0">
+                                    <li class="accordion-item border-b-[1px] border-[#DBD6CF] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0" [ngClass]="{'active': activeIndex === 3}" (click)="toggleActive(3)">
                                         <div class="accordion-header flex items-center justify-between font-dmSans text-xl font-bold leading-[1.2] -tracking-[0.5px] text-black lg:text-[28px]">
                                             <p>How can AI benefit my business?</p>
                                             <div class="accordion-icon">
