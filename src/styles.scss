@@ -1,8 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "primeng/resources/themes/lara-light-blue/theme.css";
-@import "primeng/resources/primeng.css";
+
+
+@import "../src/assets/css/carousel-custom/carousel.css";
+
+@import "../node_modules/@marcreichel/angular-carousel/themes/stripes.css";
 @layer base {
   body {
     @apply min-h-screen font-body text-lg leading-[1.66] text-colorCodGray;
