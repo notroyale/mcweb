@@ -1,14 +1,15 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
 import { CarouselModule } from '@marcreichel/angular-carousel';
+import { TokenomicsSectionComponent } from "../tokenomics-section/tokenomics-section.component";
 
 
 @Component({
-  selector: 'app-tokenomics-carousel',
-  standalone: true,
-  imports: [CommonModule, CarouselModule],
-  templateUrl: './tokenomics-carousel.component.html',
-  styleUrl: './tokenomics-carousel.component.scss'
+    selector: 'app-tokenomics-carousel',
+    standalone: true,
+    templateUrl: './tokenomics-carousel.component.html',
+    styleUrl: './tokenomics-carousel.component.scss',
+    imports: [CommonModule, CarouselModule, TokenomicsSectionComponent]
 })
 export class TokenomicsCarouselComponent {
   screenWidth: number;
