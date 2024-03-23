@@ -33566,6 +33566,12 @@ html[xmlns] .flexslider .slides {
     .promo-trigger {
         display: none;
     }
+    .roadmap-step-list-s1:active {
+        background-color: #f1f1f1;
+        color: #000;
+        border: none;
+        box-shadow: #fe330a 5px 5px, rgb(254 51 10 / 65%) 10px 10px, rgb(254 51 10 / 45%) 15px 15px, rgb(254 51 10 / 25%) 20px 20px, rgb(254 51 10 / 20%) 25px 25px;
+    }
 }
 
 .roadmap-sub {
