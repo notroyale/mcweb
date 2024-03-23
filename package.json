@@ -21,6 +21,7 @@
     "@marcreichel/angular-carousel": "^3.0.1",
     "chart.js": "^4.4.2",
     "ng2-charts": "^6.0.0",
+    "ngx-owl-carousel-o": "^17.0.0",
     "prettier": "^3.1.1",
     "prettier-plugin-tailwindcss": "^0.5.11",
     "primeng": "^17.10.0",

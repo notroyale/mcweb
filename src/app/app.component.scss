@@ -33,3 +33,11 @@
     width: 402px;
     margin: auto;
 }
+
+@media (max-width: 576px) {
+    .mock1{
+        height: 100%;
+        width: 100%;
+        margin: auto;
+    }
+  }
